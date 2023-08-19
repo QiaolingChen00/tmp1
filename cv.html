@@ -21,53 +21,48 @@
 <h1>QiaoLing Chen (陈巧玲)</h1>
 </div>
 <table class="imgtable"><tr><td>
-<a href="https://chenqll.github.io/"><img src="assets/img/logo3.jpg" alt="alt text" width="131px" height="130px" /></a>&nbsp;</td>
+<a href="https://chenqll.github.io/"><img src="assets/img/LittleWhite.jpeg" alt="alt text" width="106px" height="150px" /></a>&nbsp;</td>
 <td align="left"><br />
 Master in NUS<br />
 Singapore <br /> 
 E-mail: <a href="qiaoling_chen@u.nus.edu">qiaoling_chen@u.nus.edu</a></p>
 </td></tr></table>
 <h2>About me</h2>
-<p>I currently study in National University of Singapore for the M.S. degree, in 2023. My main research interests include Machine Learning Systems,big model parallel automatically training . Also, I do some research about ChatGPT.</p>
-<h2>Research</h2>
-<p>My research interests include: </p>
-<ul>
-<li><p>ML Systems</p>
-</li>
-<li><p>NLP-AIGC</p>
-</li>
-</ul>
-<h3>Current work</h3>
-<ul>
-<li><p>automatically profile for pipeline parallel training in cluster</p>
-</li>
-<li><p>DTR in Graph with pytorch</p>
-</li>
-</ul>
-<h3>Recent publications </h3>
-<ol>
-<li><p>"Feature Transformation for Cross-domain Few-shot Remote Sensing Scene Classification", <i>ICPR</i>, Oct. 2022. [<a href="https://arxiv.org/abs/2203.02270">pdf</a>][<a href="https://github.com/chenqll/FTM">code</a>]</p>
-</ol>
+<p>I am currently a Master at NUS and will graduate in November 2023. <br/>
+
+After that, I will be working as an RA in S-Lab Lab at Nanyang Technological University, Singapore, doing research on distributed training and inference for large models.</p>
+<h2>Publications</h2>
+
+    <h4 style="color: #e37222;">[OSDI 23]</h4>
+    <p style="font-weight: bold">Hydro: Surrogate-Based Hyperparameter Tuning Service in Datacenters</p>
+        <p><a href="https://tonyhao.xyz/">Qinghao Hu</a>, Zhisheng Ye*, Meng Zhang*, Qiaoling Chen*, Peng Sun, <a href="https://personal.ntu.edu.sg/ygwen/">Yonggang Wen</a>, <a href="https://personal.ntu.edu.sg/tianwei.zhang/">Tianwei Zhang</a></p>
+        [<a href="https://www.usenix.org/conference/osdi23/presentation/hu">pdf</a>][<a href="https://github.com/S-Lab-System-Group/Hydro">code</a>]<a>[Artifact Badges: Available Functional Reproduced]</a><br /><br>
+
+    <h4 style="color: #e37222;">[ICPR 22]</h4>
+    <p style="font-weight: bold">Feature Transformation for Cross-domain Few-shot Remote Sensing Scene Classification<br />
+        [<a href="https://arxiv.org/abs/2203.02270">pdf</a>][<a href="https://github.com/chenqll/FTM">code</a>]
+    </p>
+
+
 <h2>Projects</h2>
 <ol>
+
+<li><p>Near-Liner scaling training</p></li>
+<ul>
+<li><p>Enabling linear acceleration of large models within multiple ranks</p>
+</li> 
+</ul>
+
 <li><p>Tuning the cluster resources using the bubble in the data center</p></li>
 <ul>
 <li><p>tuning the cluster resources using the bubble in the data center，achieving 200% optimization.</p>
 </li> 
-<li><p>Megatron-DeepSpeed GPT pre-training performance tests on RTX 3090 single 4-card, A100 single 8-card and A100
-    4-card 32-card with different parameters</p>
-</li>
-<li><p>The Megatro-Deepspeed source code and the nsys profile of the GPT under running parallelism were analysed to
-    find the location and duration of the empty bubbles under running parallelism.</p>
-</li>
-<li><p>Wrapping small models using hooks, wrappers, and making small model training on and off by sending signals
-    through large models. (https://github.com/Chenqll/od_execution)</p>
+<li><a href="ttps://github.com/Chenqll/od_execution">Using hooks, wrappers, and making small model training on and off by sending signals
+    through large models.</a>
 </li>
 <li><p>Automatic insertion of small models into the training bubble during GPT training without affecting GPT training
     performance, enabling parallel optimization.
     </p>
-</li>
-<li><p>Cluster monitoring and management analysis of GPT training using DCGM.</p>
 </li>
 </ul>
 <li><p>Feature Transformation for Cross-domain Few-shot Remote Sensing Scene Classification
@@ -89,25 +84,9 @@ E-mail: <a href="qiaoling_chen@u.nus.edu">qiaoling_chen@u.nus.edu</a></p>
     methods.
     </p>
 </li>
-<li><p>Data analysis and collation, and writing of the paper</p>
 </li>
 </ul>
 
-<li><p>YouTube video trend predictions, 09.2022-11.2022</p></li>
-<ul>
-<li><p>Sentiment classification of YouTube video comments using the BERT model, including text pre-processing and model
-    fine-tuning.
-    </p>
-</li>
-<li><p>opic extraction of YouTube video comments using SUMMA, including text pre-processing (stopwords, word
-    metathesis)
-    </p>
-</li>
-<li><p>Classification of the generated comment Token using K-Means algorithm, which includes determining the number of
-    K's using the silhouette method, generating word clouds and describing and extracting features for each class.
-    </p>
-</li>
-</ul>
 </ol>
 
 
@@ -117,17 +96,18 @@ E-mail: <a href="qiaoling_chen@u.nus.edu">qiaoling_chen@u.nus.edu</a></p>
 <li><p> Development and optimization of the OneFlow distributed deep learning framework operator library and
     deployment of common AI algorithms on the OneFlow Smart Cloud. 03.2022-09.2022</p></li>
 <ul>
-<li><p>OneFlow - OCR algorithm implementation ,optimization and cloud deployment using CRNN, CTPN </p>
-</li>
-<li><p>OneFlow AI-writer implementation, including loss-alignment, parallel optimization, final project outperforms the
+<li><p>OneFlow - libai-chat: <a style="color:#e37222">RLHF-PPO</a> algorithm implementation</p></li>
+<li><p>OneFlow <a style="color:#e37222">RWKV</a>-AI-writer implementation, including loss-alignment, parallel optimization, final project outperforms the
     original in terms of memory and throughput for single card, data parallelism, and model parallelism.</p>
 </li>
+<li><p>OneFlow - OCR algorithm implementation ,optimization and cloud deployment using CRNN, CTPN </p>
+</li>
+
 <li><p>OneFlow BERT-Based-NER development and implementation</p>
 </li>
 <li><p>OneFlow distributed framework operator error message optimisation and test development</p>
 </li>
-<li><p>OneFlow v 0.8.0 documentation refactoring using Sphinx to align with Pytorch API documentation.</p>
-</li>
+
 </ul>
 </ol>
 <h2>Education</h2>
