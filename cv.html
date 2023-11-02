@@ -32,6 +32,11 @@ E-mail: <a href="qiaoling_chen@u.nus.edu">qiaoling_chen@u.nus.edu</a></p>
 
 After that, I will be working as an RA in S-Lab Lab at Nanyang Technological University, Singapore, doing research on distributed training and inference for large models.</p>
 <h2>Publications</h2>
+, Qinghao Hu, Zhisheng Ye, Guoteng Wang, Peng Sun, Yonggang Wen, Tianwei Zhang
+    <h4 style="color: #e37222;">[Preprint]</h4>
+    <p style="font-weight: bold">AMSP: Super-Scaling LLM Training via Advanced Model States Partitioning</p>
+        <p>Qiaoling Chen, <a href="https://tonyhao.xyz/">Qinghao Hu</a>, Zhisheng Ye, Guoteng Wang, Peng Sun, <a href="https://personal.ntu.edu.sg/ygwen/">Yonggang Wen</a>, <a href="https://personal.ntu.edu.sg/tianwei.zhang/">Tianwei Zhang</a></p>
+        [<a href="https://arxiv.org/abs/2311.00257">pdf</a>][<a href="https://github.com/S-Lab-System-Group/Hydro">code</a>]<a>[Submitted to a Conference]</a><br /><br>
 
     <h4 style="color: #e37222;">[OSDI 23]</h4>
     <p style="font-weight: bold">Hydro: Surrogate-Based Hyperparameter Tuning Service in Datacenters</p>
@@ -48,13 +53,31 @@ After that, I will be working as an RA in S-Lab Lab at Nanyang Technological Uni
 <h2>Projects</h2>
 <ol>
 
-<li><p>Near-Liner scaling training</p></li>
+<li><p>Long sequence LLM parallel training</p></li>
 <ul>
-<li><p>Enabling linear acceleration of large models within multiple ranks</p>
+<li><p>Realizing parallel training of LLM with long sequences</p>
+</li>
+</ul>
+
+<li><p>Super-Scaling LLM Training via Advanced Model States Partitioning, 07.2023-11.2023</p></li>
+<ul>
+<li><p>undertakes a granular partitioning of model states, encompassing parameters (P), gradient (G), and optimizer states (OS)</p>
+</li>
+
+<li><p>builds a unified partitioning space, enabling independent partitioning strategies for P, G, and OS</p>
+</li>
+
+<li><p>incorporates a scale-aware partitioner to autonomously search for optimal partitioning strategies</p>
+</li>
+
+<li><p>designs a dedicated communication optimizer to ensure proficient management of data placement discrepancies arising from diverse partitioning strategies</p>
+</li> 
+
+<li><p>achieves up to 90.3% scaling efficiency across 1024 GPUs</p>
 </li> 
 </ul>
 
-<li><p>Tuning the cluster resources using the bubble in the data center</p></li>
+<li><p>Tuning the cluster resources using the bubble in the data center, 08.2022-12.2022</p></li>
 <ul>
 <li><p>tuning the cluster resources using the bubble in the data center，achieving 200% optimization.</p>
 </li> 
